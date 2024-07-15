@@ -1,5 +1,5 @@
 ---
-title: DOIs
+title: "DOIs"
 teaching: 15
 exercises: 0
 ---

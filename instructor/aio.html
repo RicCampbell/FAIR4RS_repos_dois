@@ -188,7 +188,19 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Using RMarkdown</a>
+        <a href="doi.html">1. DOIs</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="repositories.html">2. Repositories</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -253,11 +265,11 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Using RMarkdown</a></p>
+<section id="aio-doi"><p>Content from <a href="doi.html">DOIs</a></p>
 <hr>
 <p>Last updated on 2024-07-15 |
 
-        <a href="https://github.com/RicCampbell/FAIR4RS_repos_dois/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/RicCampbell/FAIR4RS_repos_dois/edit/main/episodes/doi.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -270,8 +282,9 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do you write a lesson using R Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+<li>What is a DOI?</li>
+<li>What good is a DOI (compared to say an URL)?</li>
+<li>How do I get a DOI?</li>
 </ul>
 </div>
 </div>
@@ -281,9 +294,9 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to use markdown with the new lesson template</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<li>Understand what a DOI is</li>
+<li>Understand how they differ from other ways to link to your work</li>
+<li>Understand the creation and sourcing a DOI for your work</li>
 </ul>
 </div>
 </div>
@@ -294,171 +307,169 @@ challenge blocks</li>
 <a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson template:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
-<div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge-1-can-you-do-it"></a>
-</h3>
-<div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
-</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-<a class="anchor" aria-label="anchor" href="#figures"></a>
+<p>The code that you write is important. No matter the size, style, or
+langauage it is an integral part of the research that it is part of, or
+of course sometimes it is the main output of the research project.</p>
+<p>Historically research outputs have been focused on papers, and while
+this is still mostly true, there has been a change in recent years to
+give better acknolwdgement to other research outputs, such as code.
+There has also been a shift (which we are continuing to see) that
+funders are requiring other outputs from projects to be made available,
+and while this is mostly focused on the data that has been collected or
+used, in certain fields code is also part of this. You may also come
+across conferences or awards that require code to be available (and
+open) to be able to submit or be considered. There’s also been a rich
+history of code being made free and available to other.</p>
+<p>Regardless of the reason you want to disseminate your code, there are
+some ways you can make this easier for both yourself and anyone who
+wishes to use you code, such as DOI’s, using repositories, metadata, and
+knowing how to cite yourself.</p>
+</section><section><h2 class="section-heading" id="what-is-a-doi">What is a DOI?<a class="anchor" aria-label="anchor" href="#what-is-a-doi"></a>
+<a class="anchor" aria-label="anchor" href="#what-is-a-doi"></a>
 </h2>
 <hr class="half-width">
-<p>You can also include figures generated from R Markdown:</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">pie</span><span class="op">(</span></span>
-<span>  <span class="fu">c</span><span class="op">(</span>Sky <span class="op">=</span> <span class="fl">78</span>, <span class="st">"Sunny side of pyramid"</span> <span class="op">=</span> <span class="fl">17</span>, <span class="st">"Shady side of pyramid"</span> <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>, </span>
-<span>  init.angle <span class="op">=</span> <span class="fl">315</span>, </span>
-<span>  col <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"deepskyblue"</span>, <span class="st">"yellow"</span>, <span class="st">"yellow3"</span><span class="op">)</span>, </span>
-<span>  border <span class="op">=</span> <span class="cn">FALSE</span></span>
-<span><span class="op">)</span></span></code></pre>
+<p>A DOI is a type of PID. A PID is a Persistent Identifier, and a DOI
+is a Digital Object Identifier. A single DOI is a linked to a digital
+object and always directs to that object, regardless of the location or
+potential changes to metadata. The most common use of DOIs is for
+journal articles. A single article should have a single DOI, but they
+can also be used for databases or software/code.</p>
+<div id="example-doi" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
 </div>
-<figure style="text-align: center"><img src="../fig/introduction-rendered-pyramid-1.png" alt="pie chart illusion of a pyramid" class="figure mx-auto d-block"><figcaption>
-Sun arise each and every morning
-</figcaption></figure><p>Or you can use standard markdown for static figures with the
-following syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+<div id="example-doi" class="callout-inner">
+<h3 class="callout-title">Example DOI<a class="anchor" aria-label="anchor" href="#example-doi"></a>
+</h3>
+<div class="callout-content">
+<p>This is what a DOI looks like: [10.1016/j.ascom.2020.100427]</p>
+</div>
+</div>
+</div>
+<p>You’ve probably seen these many times before because, like that one,
+they are used for journal articles. Interestingly, the article that
+links to is about a tool that has been created, is freely available, has
+a licence applied to it, but has no link to the [code/software
+itself][<a href="https://github.com/astrom-tom/SPARTAN" class="external-link uri">https://github.com/astrom-tom/SPARTAN</a>].</p>
+</section><section><h2 class="section-heading" id="isnt-that-just-a-linkurl">Isn’t that just a link/URL?<a class="anchor" aria-label="anchor" href="#isnt-that-just-a-linkurl"></a>
+<a class="anchor" aria-label="anchor" href="#isnt-that-just-a-linkurl"></a>
+</h2>
+<hr class="half-width">
+<p>No. The internet as a whole is much more fragile than most people
+think. There is a myriad of different ways that things break, or cease
+to exist. While there are of course some old webpages that are still up
+for no apparent reason, and multiple archieves and projects that try and
+capture parts of the internet ([Wayback Machine][<a href="https://web.archive.org/" class="external-link uri">https://web.archive.org/</a>], [Software Heritage][<a href="https://www.softwareheritage.org/" class="external-link uri">https://www.softwareheritage.org/</a>]), these are by no
+means complete.</p>
+<p>But speaking of your own code, if it’s on a webpage (maybe your own),
+hosting isn’t free are you planning on keeping this webpage for a long
+time? Are you never moving it from that page/URL, do you know if other
+people are using that link?</p>
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
 </h3>
 <div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
+<p>A DOI essentially makes it someone else’s job to ensure that the
+resolves to the right digital object.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-<a class="anchor" aria-label="anchor" href="#math"></a>
+<p>Only registered organisations can created DOI’s. To be able to mint a
+DOI, an organiation must meet the International DOI Foundataions
+standards and pay to become a member, meaning that they must have the
+ability to ensure the DOIs are maintained.</p>
+<p>They are also designed to be short and human readable, again unlike
+most URLs. Whereas shortened URLs are not persistant.</p>
+</section><section><h2 class="section-heading" id="versions">Versions<a class="anchor" aria-label="anchor" href="#versions"></a>
+<a class="anchor" aria-label="anchor" href="#versions"></a>
 </h2>
 <hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
-<div id="keypoints1" class="callout keypoints">
+<p>Version control of course very important around code (see Version
+control part of the FAIR4RS training), and you shouldn’t create more
+than one DOI for a single digital object, however you can version with
+DOIs;</p>
+<div id="dois-with-multiple-versions" class="callout">
 <div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
+<i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+<div id="dois-with-multiple-versions" class="callout-inner">
+<h3 class="callout-title">DOIs with multiple versions<a class="anchor" aria-label="anchor" href="#dois-with-multiple-versions"></a>
 </h3>
 <div class="callout-content">
+<p>10.15131/shef.data.22633528<em>.v2</em></p>
+</div>
+</div>
+</div>
+<p>That part at the end indicates which version the doi will resolve to.
+If you have written some code for a research project, and the current
+version is the one that was used, but you are still developing it,
+referrencing that version in any paper or outputs will allow people to
+see exactly what the code looked like at the time the research was
+conducted.</p>
+<p>It’s important to note that if no version suffix is included in the
+DOI link then it will resolve to the most recent version of the object.
+This is sometimes exactly what is wanted and sometimes not, so it’s good
+to think about this when using a DOI.</p>
+</section><section><h2 class="section-heading" id="how-do-i-get-a-doi">How do I get a DOI?<a class="anchor" aria-label="anchor" href="#how-do-i-get-a-doi"></a>
+<a class="anchor" aria-label="anchor" href="#how-do-i-get-a-doi"></a>
+</h2>
+<hr class="half-width">
+<p>To get a DOI for code the best place is to use a repository. It’s
+important to note that (currently) GitHub does not mint DOIs. Some
+examples of repositories that do are [Zenodo][about.zenodo.org] and the
+University’s institutional repository [ORDA][orda.shef.ac.uk]</p>
+<p>When you make a deposit in a repository that does mint DOIs, there
+should be nothing extra you have to do, when it has been published it
+there will be a DOI that you can use to cite and reference to your
+work.</p>
+<figure><img src="../images/FAIR4RS%20Zenodo%20doi%20image.png" alt="“Image 1 - DOI location in a Zenodo deposit”" class="figure mx-auto d-block"><div class="figcaption">“Image 1 - DOI location in a Zenodo
+deposit”</div>
+</figure><figure><img src="../images/FAIR4RS%20ORDA%20doi%20image.png" alt="“Image 2 - DOI location in a ORDA deposit”" class="figure mx-auto d-block"><div class="figcaption">“Image 2 - DOI location in a ORDA deposit”</div>
+</figure><!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ --></section></section><section id="aio-repositories"><p>Content from <a href="repositories.html">Repositories</a></p>
+<hr>
+<p>Last updated on 2024-07-15 |
+
+        <a href="https://github.com/RicCampbell/FAIR4RS_repos_dois/edit/main/episodes/repositories.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>What is a DOI?</li>
+<li>What good is a DOI (compared to say an URL)?</li>
+<li>How do I get a DOI?</li>
 </ul>
 </div>
 </div>
 </div>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Understand what a DOI is</li>
+<li>Understand how they differ from other ways to link to your work</li>
+<li>Understand the creation and sourcing a DOI for your work</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></section>
 </div>
     </main>
 </div>

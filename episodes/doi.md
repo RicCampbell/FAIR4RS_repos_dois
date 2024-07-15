@@ -80,9 +80,9 @@ To get a DOI for code the best place is to use a repository. It's important to n
 
 When you make a deposit in a repository that does mint DOIs, there should be nothing extra you have to do, when it has been published it there will be a DOI that you can use to cite and reference to your work.
 
-![Image 1 - DOI location in a Zenodo deposit](../images/FAIR4RS Zenodo doi image.png)
+!["Image 1 - DOI location in a Zenodo deposit"](images/FAIR4RS Zenodo doi image.png)
 
 
-![Image 2 - DOI location in a ORDA deposit](../images/FAIR4RS ORDA doi image.png)
+!["Image 2 - DOI location in a ORDA deposit"](episodes/images/FAIR4RS ORDA doi image.png)
 
 

@@ -2,7 +2,7 @@ Leaving the below instructions for now
   but
 this will be replaced with proper README text in time.
 
-Lesson Title: Software repos, DOIs, metadata, citation
+Lesson Title: Software dissemination and impact
 
 Lesson Description:
 While putting your software online certainly helps it satisfy the FAIR principles, simply doing so might not be enough for other researchers to actually find and utilise what you’ve put out there.

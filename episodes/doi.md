@@ -37,15 +37,15 @@ A DOI is a type of PID. A PID is a Persistent Identifier, and a DOI is a Digital
 
 # Example DOI
 
-This is what a DOI looks like:  [10.1016/j.ascom.2020.100427]
+This is what a DOI looks like:  [10.1016/j.ascom.2020.100427](10.1016/j.ascom.2020.100427)
 
 :::::::::::::::::::::::::::::::::::::::::::::::
 
-You've probably seen these many times before because, like that one, they are used for journal articles. Interestingly, the article that links to is about a tool that has been created, is freely available, has a licence applied to it, but has no link to the [code/software itself][https://github.com/astrom-tom/SPARTAN].
+You've probably seen these many times before because, like that one, they are used for journal articles. Interestingly, the article that links to is about a tool that has been created, is freely available, has a licence applied to it, but has no link to the [code/software itself](https://github.com/astrom-tom/SPARTAN).
 
 ## Isn't that just a link/URL?
 
-No. The internet as a whole is much more fragile than most people think. There is a myriad of different ways that things break, or cease to exist. While there are of course some old webpages that are still up for no apparent reason, and multiple archieves and projects that try and capture parts of the internet ([Wayback Machine][https://web.archive.org/], [Software Heritage][https://www.softwareheritage.org/]), these are by no means complete.
+No. The internet as a whole is much more fragile than most people think. There is a myriad of different ways that things break, or cease to exist. While there are of course some old webpages that are still up for no apparent reason, and multiple archieves and projects that try and capture parts of the internet ([Wayback Machine](https://web.archive.org/), [Software Heritage](https://www.softwareheritage.org/)), these are by no means complete.
 
 But speaking of your own code, if it's on a webpage (maybe your own), hosting isn't free are you planning on keeping this webpage for a long time? Are you never moving it from that page/URL, do you know if other people are using that link?
 
@@ -76,13 +76,13 @@ It's important to note that if no version suffix is included in the DOI link the
 
 ## How do I get a DOI?
 
-To get a DOI for code the best place is to use a repository. It's important to note that (currently) GitHub does not mint DOIs. Some examples of repositories that do are [Zenodo][about.zenodo.org] and the University's institutional repository [ORDA][orda.shef.ac.uk]
+To get a DOI for code the best place is to use a repository. It's important to note that (currently) GitHub does not mint DOIs. Some examples of repositories that do are [Zenodo](about.zenodo.org) and the University's institutional repository [ORDA](orda.shef.ac.uk).
 
 When you make a deposit in a repository that does mint DOIs, there should be nothing extra you have to do, when it has been published it there will be a DOI that you can use to cite and reference to your work.
 
-!["Image 1 - DOI location in a Zenodo deposit"](images/FAIR4RS Zenodo doi image.png)
+!["Image 1 - DOI location in a Zenodo deposit"](images/FAIR4RS_Zenodo_doi_image.png){alt="A screenshot of a the DOI on a Zenodo deposit"}
 
 
-!["Image 2 - DOI location in a ORDA deposit"](episodes/images/FAIR4RS ORDA doi image.png)
+!["Image 2 - DOI location in a ORDA deposit"](images/FAIR4RS_ORDA_doi_image.png){alt="A screenshot of a the DOI on a ORDA deposit"}
 
 

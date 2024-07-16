@@ -37,11 +37,13 @@ A DOI is a type of PID. A PID is a Persistent Identifier, and a DOI is a Digital
 
 # Example DOI
 
-This is what a DOI looks like:  [10.1016/j.ascom.2020.100427](10.1016/j.ascom.2020.100427)
+This is what a DOI looks like:  [10.1016/j.ascom.2020.100427](https://doi.org/10.1016/j.ascom.2020.100427)
 
 :::::::::::::::::::::::::::::::::::::::::::::::
 
 You've probably seen these many times before because, like that one, they are used for journal articles. Interestingly, the article that links to is about a tool that has been created, is freely available, has a licence applied to it, but has no link to the [code/software itself](https://github.com/astrom-tom/SPARTAN).
+
+Although, 
 
 ## Isn't that just a link/URL?
 
@@ -66,7 +68,7 @@ Version control of course very important around code (see Version control part o
 ::::::::::::::::::::::::::::::::::::::: callout
 # DOIs with multiple versions
 
-10.15131/shef.data.22633528*.v2*
+[10.15131/shef.data.22633528**.v2**](https://doi.org/10.15131/shef.data.22633528.v2)
 
 :::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -76,7 +78,7 @@ It's important to note that if no version suffix is included in the DOI link the
 
 ## How do I get a DOI?
 
-To get a DOI for code the best place is to use a repository. It's important to note that (currently) GitHub does not mint DOIs. Some examples of repositories that do are [Zenodo](about.zenodo.org) and the University's institutional repository [ORDA](orda.shef.ac.uk).
+To get a DOI for code the best place is to use a repository. It's important to note that (currently) GitHub does not mint DOIs. Some examples of repositories that do are [Zenodo](https://about.zenodo.org) and the University's institutional repository [ORDA](https://orda.shef.ac.uk).
 
 When you make a deposit in a repository that does mint DOIs, there should be nothing extra you have to do, when it has been published it there will be a DOI that you can use to cite and reference to your work.
 

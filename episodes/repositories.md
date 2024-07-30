@@ -129,7 +129,7 @@ You might be able to see it now, but it's still not clear how useful that button
 
 And from this you can link your account, and pull in a repository directly to ORDA. You can see from the image below with the link it simply allows you to select which repo you want to pull across.
 
-!["Image 5 - GitHub repos available for selection to deposit"](images/ORDA_github_repo_selection_image.PNG){alt="A screenshot showing how your repos are displayed to pull across in ORDA"
+!["Image 5 - GitHub repos available for selection to deposit"](images/ORDA_github_repo_selection_image.PNG){alt="A screenshot showing how your repos are displayed to pull across in ORDA"}
 
 There's a few other bits of interest in this image as well. First you can see that if a GitHub repo has been imported by another user if doesn't let you create another deposit for it (remember this would mint another DOI for the same output), and this is across all instances of Figshare, for example that one is in the main Figshare.com instance. There is also a simple option that you can see there that allows automated updates of your GitHub repositories to be pulled into ORDA, the slider between the repo name and last modified date.
 

@@ -55,7 +55,7 @@ Also the last point is probably more important around data rather than code.
 
 As there are many different repositories out there, picking a suitable one for your code is an important task. You may know the repository that you wish to use already, or you may want to find a suitable subject specific repository. Both [re3data](http://re3data.org) and [FAIRsharing](http://fairsharing.org) hold a directory of repositories that can be browsed, searched, and filtered to help you find the most suitable repository for your needs.
 
-!["Image 1 - Re3Data wheel of subjects"](fig/re3data_wheel_of_subjects.PNG){alt="A screenshot of the re3data page 'Browse by subjects' showing a wheel of all subjects available"}
+!["Image 1 - Re3Data wheel of subjects"](fig/re3data_wheel_of_subjects.png){alt="A screenshot of the re3data page 'Browse by subjects' showing a wheel of all subjects available"}
 
 Both have good meta data of each repository and helpful icons to quickly be able to answer some of the questions listed above.
 
@@ -101,7 +101,9 @@ Within the ORDA, you can link your account and your GitHub account.
 
 :::::::::::::::::::::::::::::::::::::::: challenge
 
-## Go to ORDA and find the button that imports from GitHub
+## Challenge 2: Go to ORDA and find the button that imports from GitHub
+
+See if you can find the button for linking a GitHub repo in [ORDA](http:/orda.shef.ac.uk)
 
 ::::::::::::::::::::::::::::::::::::::::
 
@@ -115,21 +117,21 @@ We'll go through this in a minute, but if you did actually find it, well done! F
 
 ## ORDA
 
-!["Image 2 - Landing page of ORDA"](fig/ORDA_landing_page.PNG){alt="A screenshot of the ORDA landing page"}
+!["Image 2 - Landing page of ORDA"](fig/ORDA_landing_page.png){alt="A screenshot of the ORDA landing page"}
 
 This is the ORDA landing page, showing my login. All University of Sheffield staff and PGRs should have an account to access ORDA as it is associated with your staff/student profile (N.B. it is also deactivated with your profile, but can be re-activated for a period to allow a deposit or edit to be made).
 
 From here if you go to the My data section in the top right, which will show something like this;
 
-!["Image 3 - The 'My data' page of ORDA"](fig/ORDA_my_data_image.PNG){alt="A screenshot of the 'My data' page in ORDA"}
+!["Image 3 - The 'My data' page of ORDA"](fig/ORDA_my_data_image.png){alt="A screenshot of the 'My data' page in ORDA"}
 
 You might be able to see it now, but it's still not clear how useful that button is. Next to the '+ Create a new item' button is a grey out Octocat, which hovering over will fill in the colour and provide the helpful words 'Import from GitHub'. Clicking on that will give you this popup;
 
-!["Image 4 - Linking of GitHub to ORDA section"](fig/ORDA_github_link_image.PNG){alt="A screenshot of the popup to link a GitHub account to ORDA, found in ORDA."}
+!["Image 4 - Linking of GitHub to ORDA section"](fig/ORDA_github_link_image.png){alt="A screenshot of the popup to link a GitHub account to ORDA, found in ORDA."}
 
 And from this you can link your account, and pull in a repository directly to ORDA. You can see from the image below with the link it simply allows you to select which repo you want to pull across.
 
-!["Image 5 - GitHub repos available for selection to deposit"](fig/ORDA_github_repo_selection_image.PNG){alt="A screenshot showing how your repos are displayed to pull across in ORDA"}
+!["Image 5 - GitHub repos available for selection to deposit"](fig/ORDA_github_repo_selection_image.png){alt="A screenshot showing how your repos are displayed to pull across in ORDA"}
 
 There's a few other bits of interest in this image as well. First you can see that if a GitHub repo has been imported by another user if doesn't let you create another deposit for it (remember this would mint another DOI for the same output), and this is across all instances of Figshare, for example that one is in the main Figshare.com instance. There is also a simple option that you can see there that allows automated updates of your GitHub repositories to be pulled into ORDA, the slider between the repo name and last modified date.
 

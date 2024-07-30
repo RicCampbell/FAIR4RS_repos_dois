@@ -81,10 +81,10 @@ To get a DOI for code the best place is to use a repository. It's important to n
 
 When you make a deposit in a repository that does mint DOIs, there should be nothing extra you have to do, when it has been published it there will be a DOI that you can use to cite and reference to your work.
 
-!["Image 1 - DOI location in a Zenodo deposit"](fig/FAIR4RS_Zenodo_doi_image.PNG){alt="A screenshot of a the DOI on a Zenodo deposit"}
+!["Image 1 - DOI location in a Zenodo deposit"](fig/FAIR4RS_Zenodo_doi_image.png){alt="A screenshot of a the DOI on a Zenodo deposit"}
 
 
-!["Image 2 - DOI location in a ORDA deposit"](fig/FAIR4RS_ORDA_doi_image.PNG){alt="A screenshot of a the DOI on a ORDA deposit"}
+!["Image 2 - DOI location in a ORDA deposit"](fig/FAIR4RS_ORDA_doi_image.png){alt="A screenshot of a the DOI on a ORDA deposit"}
 
 :::::::::::::::::::::::::::::::::::: keypoints
  - DOI's are persistant identifiers that should always point to your code.

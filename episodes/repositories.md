@@ -36,6 +36,7 @@ It's also worth noting that there are different types of repositories, some are 
 As we've just seen not all repositories are created equal, some are not just repositories, others aren't technically repositories at all. This means you should put some thought into which repository you are going to use to deposit your code. 
 
 ::::::::::::::::::::::::::::::::::::::: callout
+
 # What do you want from a repository
 
 - Do you want your work to be fully open?
@@ -60,7 +61,7 @@ Both have good meta data of each repository and helpful icons to quickly be able
 
 Our own guidance is that you should look for a subject or data specific repository first, and if nothing is suitable or has the functionality required, then you should use ORDA (The University of Sheffield institutional repository).
 
-::::::::::::::::::::::::::::::::::::: challenge
+:::::::::::::::::::::::::::::::::::::::: challenge
 
 ## Challenge 1: Would making my code a package be better?
 
@@ -81,6 +82,8 @@ Think about who 'owns' packages, how they are disseminated, and what we wanted t
 Maybe! But also probably not. The main issue is that they are different things really, or at least help and aid in different ways, but use a lot of the same vocabulary. While a package will most likely make it much easier for people to use you work (a simple install command), it often doesn't make it more citeable.
 
 :::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::
 
 For example, the main repository of Python packages the Python Package Index or [PyPI](http://pypi.org), holds over half a million projects, but does not mint a DOI for these projects. However, recently, all R packages on [CRAN](https://cran.r-project.org/) have been attributed a DOI. Now of course there's differences there in how packages are regulated but it's a good step forward and giving the creators of packages the recognition they deserve.
 

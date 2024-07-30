@@ -159,12 +159,24 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         2. Repositories
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#introduction">Introduction</a></li>
+<li><a href="#differences-between-repositories">Differences between repositories</a></li>
+<li><a href="#picking-a-repositiry">Picking a repositiry</a></li>
+<li><a href="#can-this-not-all-be-automated-and-made-simple">Can this not all be automated and made simple?</a></li>
+<li><a href="#orda">ORDA</a></li>
+<li><a href="#zenodo">Zenodo</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -227,7 +239,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Repositories</h1>
-        <p>Last updated on 2024-07-15 |
+        <p>Last updated on 2024-07-30 |
 
         <a href="https://github.com/RicCampbell/FAIR4RS_repos_dois/edit/main/episodes/repositories.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -248,9 +260,9 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>What is a DOI?</li>
-<li>What good is a DOI (compared to say an URL)?</li>
-<li>How do I get a DOI?</li>
+<ul><li>What is a repository?</li>
+<li>How do I pick a repository?</li>
+<li>How do I link GitHub to ORDA?</li>
 </ul></div>
 </div>
 </div>
@@ -258,22 +270,240 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Understand what a DOI is</li>
-<li>Understand how they differ from other ways to link to your work</li>
-<li>Understand the creation and sourcing a DOI for your work</li>
+<ul><li>Understand what a repository is and does</li>
+<li>Feel comfortable selecting a suitable repository</li>
+<li>Know how to link a GitHub repository to ORDA (a DOI giving
+repository)</li>
 </ul></div>
 </div>
 </div>
+</div>
+</div>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
+<hr class="half-width"><p>Hosting large amounts of data, minting DOIs, creating a usable
+interface for code and ability to pull the code to other work setups all
+take a lot of time and effort. This is where repositories comes in. A
+repository will make space available to you to deposit your work.
+GitHub, as a whole, could be seen as a repository, although you create
+repositories yourself inside GitHub. It also does a lot more than just
+hold your data/code, and of course it’s main function is version
+control.</p>
+<p>In the last episode we saw some repositories <a href="https://about.zenodo.org" class="external-link">Zenodo</a> and the University’s
+institutional repository <a href="https://orda.shef.ac.uk" class="external-link">ORDA</a>, but
+there are many more out there. Most repositories, certainly around
+academia, tend to be fully open, so anyone can access what is
+deposited.</p>
+<p>It’s important to remember this as you may not want, or be able to,
+make your code fully open to all (although we encourage you to where
+possible). However, there are repositories out there that have different
+levels of access. For example the <a href="https://ukdataservice.ac.uk/" class="external-link">UK Data Service repository</a> has
+three levels of access, open, safeguarded (have to sign the End User
+Licence), and controlled (have to apply for access with criteria set by
+data provider), however, currently the UK Data Service does not hold
+code.</p>
+<p>It’s also worth noting that there are different types of
+repositories, some are purely for publications (such as the <a href="https://eprints.whiterose.ac.uk/" class="external-link">White Rose Research Online
+repository</a>, whereas others are data focused e.g. <a href="https://dataverse.harvard.edu/" class="external-link">Harvard Dataverse</a>).</p>
+</section><section><h2 class="section-heading" id="differences-between-repositories">Differences between repositories<a class="anchor" aria-label="anchor" href="#differences-between-repositories"></a>
+<a class="anchor" aria-label="anchor" href="#differences-between-repositories"></a></h2>
+<hr class="half-width"><p>As we’ve just seen not all repositories are created equal, some are
+not just repositories, others aren’t technically repositories at all.
+This means you should put some thought into which repository you are
+going to use to deposit your code.</p>
+<div id="what-do-you-want-from-a-repository" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="what-do-you-want-from-a-repository" class="callout-inner">
+<h3 class="callout-title">What do you want from a repository<a class="anchor" aria-label="anchor" href="#what-do-you-want-from-a-repository"></a>
+</h3>
+<div class="callout-content">
+<ul><li>Do you want your work to be fully open?</li>
+<li>What type of licence do you wish to apply to your work?</li>
+<li>Do you want a DOI?</li>
+<li>Do you need it to handle versioning?</li>
+<li>Do you need your work to be machine accessible?</li>
+</ul></div>
+</div>
+</div>
+<p>You may also need to think about what licence you <em>can</em> apply
+as you may be limited by any third party software you are using. This is
+covered in more detail in the Software Licence section of this
+component.</p>
+<p>Also the last point is probably more important around data rather
+than code.</p>
+</section><section><h2 class="section-heading" id="picking-a-repositiry">Picking a repositiry<a class="anchor" aria-label="anchor" href="#picking-a-repositiry"></a>
+<a class="anchor" aria-label="anchor" href="#picking-a-repositiry"></a></h2>
+<hr class="half-width"><p>As there are many different repositories out there, picking a
+suitable one for your code is an important task. You may know the
+repository that you wish to use already, or you may want to find a
+suitable subject specific repository. Both <a href="http://re3data.org" class="external-link">re3data</a> and <a href="http://fairsharing.org" class="external-link">FAIRsharing</a> hold a directory of
+repositories that can be browsed, searched, and filtered to help you
+find the most suitable repository for your needs.</p>
+<figure><img src="../images/re3data_wheel_of_subjects.PNG" alt="A screenshot of the re3data page 'Browse by subjects' showing a wheel of all subjects available" class="figure mx-auto d-block"><div class="figcaption">“Image 1 - Re3Data wheel of subjects”</div>
+</figure><p>Both have good meta data of each repository and helpful icons to
+quickly be able to answer some of the questions listed above.</p>
+<p>Our own guidance is that you should look for a subject or data
+specific repository first, and if nothing is suitable or has the
+functionality required, then you should use ORDA (The University of
+Sheffield institutional repository).</p>
+<div id="challenge-1-would-making-my-code-a-package-be-better" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-1-would-making-my-code-a-package-be-better" class="callout-inner">
+<h3 class="callout-title">Challenge 1: Would making my code a package be better?<a class="anchor" aria-label="anchor" href="#challenge-1-would-making-my-code-a-package-be-better"></a>
+</h3>
+<div class="callout-content">
+<p>If one of the main aims is to make the code you have written more
+(re-)useable by others, would it not be more suitable to create a
+package of the work, and what would be the pros and cons of doing
+so?</p>
+</div>
+</div>
+</div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div class="accordion-body">
+<p>Think about who ‘owns’ packages, how they are disseminated, and what
+we wanted to achieve with our code</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>Maybe! But also probably not. The main issue is that they are
+different things really, or at least help and aid in different ways, but
+use a lot of the same vocabulary. While a package will most likely make
+it much easier for people to use you work (a simple install command), it
+often doesn’t make it more citeable.</p>
+</div>
+</div>
+</div>
+</div>
+<p>For example, the main repository of Python packages the Python
+Package Index or <a href="http://pypi.org" class="external-link">PyPI</a>, holds over half a
+million projects, but does not mint a DOI for these projects. However,
+recently, all R packages on <a href="https://cran.r-project.org/" class="external-link">CRAN</a> have been attributed a DOI.
+Now of course there’s differences there in how packages are regulated
+but it’s a good step forward and giving the creators of packages the
+recognition they deserve.</p>
+<p>This is also the issue with using just GitHub, while it holds all
+your work, and enables people to access, read, use, and reuse your work,
+it also does not mint DOIs, as it’s main function is to aid in version
+control and allow a team to work on the same project at once, it is not
+so concerned with the long term storage or archiving of work (unlike
+other repositories), and, while nothing has happened yet, it’s worth
+remembering that GitHub is owned by Microsoft and could technically
+change at any time.</p>
+<p>There is a lot more about packages in the FAIR<sup>2</sup>4RS
+component on this, including how to create and publish your own,
+including the automation of the publication.</p>
+<p>The other issue with these being the same but different is that it is
+normally good practice to only put your work in one repository, however,
+it might be beneficial in this instance to have a package created for
+easy download, and your work in a repository that grants a DOI for
+better citation. (Note: it’s very bad practice to gain more than one DOI
+for an output).</p>
+</section><section><h2 class="section-heading" id="can-this-not-all-be-automated-and-made-simple">Can this not all be automated and made simple?<a class="anchor" aria-label="anchor" href="#can-this-not-all-be-automated-and-made-simple"></a>
+<a class="anchor" aria-label="anchor" href="#can-this-not-all-be-automated-and-made-simple"></a></h2>
+<hr class="half-width"><p>There’s certainly things you can do to help you manage this, but it
+depends on your definition of simple.</p>
+<p>Within the ORDA, you can link your account and your GitHub
+account.</p>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>We’ll go through this in a minute, but if you did actually find it,
+well done! Figshare (of which ORDA is an instance) does a lot right, but
+has some very strange decisions inside it as well.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="orda">ORDA<a class="anchor" aria-label="anchor" href="#orda"></a>
+<a class="anchor" aria-label="anchor" href="#orda"></a></h2>
+<hr class="half-width"><figure><img src="../images/ORDA_landing_page.PNG" alt="A screenshot of the ORDA landing page" class="figure mx-auto d-block"><div class="figcaption">“Image 2 - Landing page of ORDA”</div>
+</figure><p>This is the ORDA landing page, showing my login. All University of
+Sheffield staff and PGRs should have an account to access ORDA as it is
+associated with your staff/student profile (N.B. it is also deactivated
+with your profile, but can be re-activated for a period to allow a
+deposit or edit to be made).</p>
+<p>From here if you go to the My data section in the top right, which
+will show something like this;</p>
+<figure><img src="../images/ORDA_my_data_image.PNG" alt="A screenshot of the 'My data' page in ORDA" class="figure mx-auto d-block"><div class="figcaption">“Image 3 - The ‘My data’ page of ORDA”</div>
+</figure><p>You might be able to see it now, but it’s still not clear how useful
+that button is. Next to the ‘+ Create a new item’ button is a grey out
+Octocat, which hovering over will fill in the colour and provide the
+helpful words ‘Import from GitHub’. Clicking on that will give you this
+popup;</p>
+<figure><img src="../images/ORDA_github_link_image.PNG" alt="A screenshot of the popup to link a GitHub account to ORDA, found in ORDA." class="figure mx-auto d-block"><div class="figcaption">“Image 4 - Linking of GitHub to ORDA
+section”</div>
+</figure><p>And from this you can link your account, and pull in a repository
+directly to ORDA. You can see from the image below with the link it
+simply allows you to select which repo you want to pull across.</p>
+<figure><img src="../images/ORDA_github_repo_selection_image.PNG" alt="A screenshot showing how your repos are displayed to pull across in ORDA" class="figure mx-auto d-block"><div class="figcaption">“Image 5 - GitHub repos available for selection
+to deposit”</div>
+</figure><p>There’s a few other bits of interest in this image as well. First you
+can see that if a GitHub repo has been imported by another user if
+doesn’t let you create another deposit for it (remember this would mint
+another DOI for the same output), and this is across all instances of
+Figshare, for example that one is in the main Figshare.com instance.
+There is also a simple option that you can see there that allows
+automated updates of your GitHub repositories to be pulled into ORDA,
+the slider between the repo name and last modified date.</p>
+<p>However that automation is reliant of the use of a GitHub Action,
+which might not be the best approach for yourself (<a href="https://github.com/figshare/github-upload-action" class="external-link">guidance on the
+Action</a>).</p>
+<p>Alternatively you could use Figshare’s API to automate the creation
+of a new version. There’s a much more detailed description and example
+of how to do this in the Packages component of this course.</p>
+<p>As mentioned above, if you are thinking of having both a package in a
+repository, and depositing somewhere else to get a DOI, this is probably
+something you should certainly consider to ensure that there are not
+different versions of your work in different places.</p>
+</section><section><h2 class="section-heading" id="zenodo">Zenodo<a class="anchor" aria-label="anchor" href="#zenodo"></a>
+<a class="anchor" aria-label="anchor" href="#zenodo"></a></h2>
+<hr class="half-width"><p>Of course these are not the only places, similar in practice you can
+deposit a GitHub repo in the Zenodo repository, which GitHub have
+written <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content" class="external-link">guidance</a>
+on.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul><li>There are numerous repositories around and you should consider what
+you want from one</li>
+<li>Some are better than others at certain elements</li>
+<li>GitHub doesn’t mint DOI’s but you can link repos to a repository
+that does</li>
+</ul></div>
 </div>
 </div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/doi.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -344,7 +574,7 @@ any links that you are not going to use.
   "url": "RicCampbell.github.io/FAIR4RS_repos_dois/instructor/repositories.html",
   "identifier": "RicCampbell.github.io/FAIR4RS_repos_dois/instructor/repositories.html",
   "dateCreated": "2024-04-24",
-  "dateModified": "2024-07-15",
+  "dateModified": "2024-07-30",
   "datePublished": "2024-07-30"
 }
 

@@ -163,7 +163,7 @@
         <ul><li><a href="#introduction">Introduction</a></li>
 <li><a href="#what-is-a-doi">What is a DOI?</a></li>
 <li><a href="#isnt-that-just-a-linkurl">Isn’t that just a link/URL?</a></li>
-<li><a href="#versions">Versions</a></li>
+<li><a href="#doi-and-version-control">DOI and version control</a></li>
 <li><a href="#how-do-i-get-a-doi">How do I get a DOI?</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -238,7 +238,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>DOIs</h1>
-        <p>Last updated on 2024-07-16 |
+        <p>Last updated on 2024-07-30 |
 
         <a href="https://github.com/RicCampbell/FAIR4RS_repos_dois/edit/main/episodes/doi.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -278,11 +278,11 @@
 <section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 <a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
 <hr class="half-width"><p>The code that you write is important. No matter the size, style, or
-langauage it is an integral part of the research that it is part of, or
+language it is an integral part of the research that it is part of, or
 of course sometimes it is the main output of the research project.</p>
 <p>Historically research outputs have been focused on papers, and while
 this is still mostly true, there has been a change in recent years to
-give better acknolwdgement to other research outputs, such as code.
+give better acknowledgement to other research outputs, such as code.
 There has also been a shift (which we are continuing to see) that
 funders are requiring other outputs from projects to be made available,
 and while this is mostly focused on the data that has been collected or
@@ -291,8 +291,8 @@ across conferences or awards that require code to be available (and
 open) to be able to submit or be considered. There’s also been a rich
 history of code being made free and available to other.</p>
 <p>Regardless of the reason you want to disseminate your code, there are
-some ways you can make this easier for both yourself and anyone who
-wishes to use you code, such as DOI’s, using repositories, metadata, and
+some ways you can make this easier for both your and anyone who wishes
+to use you code, such as DOI’s, using repositories, metadata, and
 knowing how to cite yourself.</p>
 </section><section><h2 class="section-heading" id="what-is-a-doi">What is a DOI?<a class="anchor" aria-label="anchor" href="#what-is-a-doi"></a>
 <a class="anchor" aria-label="anchor" href="#what-is-a-doi"></a></h2>
@@ -319,13 +319,12 @@ they are used for journal articles. Interestingly, the article that
 links to is about a tool that has been created, is freely available, has
 a licence applied to it, but has no link to the <a href="https://github.com/astrom-tom/SPARTAN" class="external-link">code/software
 itself</a>.</p>
-<p>Although,</p>
 </section><section><h2 class="section-heading" id="isnt-that-just-a-linkurl">Isn’t that just a link/URL?<a class="anchor" aria-label="anchor" href="#isnt-that-just-a-linkurl"></a>
 <a class="anchor" aria-label="anchor" href="#isnt-that-just-a-linkurl"></a></h2>
 <hr class="half-width"><p>No. The internet as a whole is much more fragile than most people
-think. There is a myriad of different ways that things break, or cease
-to exist. While there are of course some old webpages that are still up
-for no apparent reason, and multiple archieves and projects that try and
+think. There is a myriad of different ways that things break or cease to
+exist. While there are of course some old webpages that are still up for
+no apparent reason, and multiple archives and projects that try and
 capture parts of the internet (<a href="https://web.archive.org/" class="external-link">Wayback Machine</a>, <a href="https://www.softwareheritage.org/" class="external-link">Software Heritage</a>), these
 are by no means complete.</p>
 <p>But speaking of your own code, if it’s on a webpage (maybe your own),
@@ -346,13 +345,13 @@ resolves to the right digital object.</p>
 </div>
 </div>
 <p>Only registered organisations can created DOI’s. To be able to mint a
-DOI, an organiation must meet the International DOI Foundataions
+DOI, an organisation must meet the International DOI Foundations
 standards and pay to become a member, meaning that they must have the
 ability to ensure the DOIs are maintained.</p>
 <p>They are also designed to be short and human readable, again unlike
-most URLs. Whereas shortened URLs are not persistant.</p>
-</section><section><h2 class="section-heading" id="versions">Versions<a class="anchor" aria-label="anchor" href="#versions"></a>
-<a class="anchor" aria-label="anchor" href="#versions"></a></h2>
+most URLs. Whereas shortened URLs are not persistent.</p>
+</section><section><h2 class="section-heading" id="doi-and-version-control">DOI and version control<a class="anchor" aria-label="anchor" href="#doi-and-version-control"></a>
+<a class="anchor" aria-label="anchor" href="#doi-and-version-control"></a></h2>
 <hr class="half-width"><p>Version control of course very important around code (see Version
 control part of the FAIR4RS training), and you shouldn’t create more
 than one DOI for a single digital object, however you can version with
@@ -372,7 +371,7 @@ DOIs;</p>
 <p>That part at the end indicates which version the doi will resolve to.
 If you have written some code for a research project, and the current
 version is the one that was used, but you are still developing it,
-referrencing that version in any paper or outputs will allow people to
+referencing that version in any paper or outputs will allow people to
 see exactly what the code looked like at the time the research was
 conducted.</p>
 <p>It’s important to note that if no version suffix is included in the
@@ -392,10 +391,28 @@ work.</p>
 <figure><img src="images/FAIR4RS_Zenodo_doi_image.PNG" alt="A screenshot of a the DOI on a Zenodo deposit" class="figure mx-auto d-block"><div class="figcaption">“Image 1 - DOI location in a Zenodo
 deposit”</div>
 </figure><figure><img src="images/FAIR4RS_ORDA_doi_image.PNG" alt="A screenshot of a the DOI on a ORDA deposit" class="figure mx-auto d-block"><div class="figcaption">“Image 2 - DOI location in a ORDA deposit”</div>
-</figure><!--
+</figure><div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul><li>DOI’s are persistant identifiers that should always point to your
+code.</li>
+<li>They are should be maintained by the minting organisation making
+them stronger than a URL.</li>
+<li>DOIs can handle multiple versions of the same object.</li>
+<li>Some repositories mint DOI’s for deposits.</li>
+</ul></div>
+</div>
+</div>
+<!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></section></div> <!-- / div.lesson-content -->
+ -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="repositories.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -466,7 +483,7 @@ any links that you are not going to use.
   "url": "RicCampbell.github.io/FAIR4RS_repos_dois/doi.html",
   "identifier": "RicCampbell.github.io/FAIR4RS_repos_dois/doi.html",
   "dateCreated": "2024-04-24",
-  "dateModified": "2024-07-16",
+  "dateModified": "2024-07-30",
   "datePublished": "2024-07-30"
 }
 

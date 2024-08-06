@@ -99,13 +99,13 @@ There's certainly things you can do to help you manage this, but it depends on y
 
 Within the ORDA, you can link your account and your GitHub account.
 
-:::::::::::::::::::::::::::::::::::::::: challenge
+::::::::::::::::::::::::::::::: challenge
 
 ## Challenge 2: Go to ORDA and find the button that imports from GitHub
 
 See if you can find the button for linking a GitHub repo in [ORDA](http:/orda.shef.ac.uk)
 
-::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::: solution
 
@@ -113,7 +113,7 @@ See if you can find the button for linking a GitHub repo in [ORDA](http:/orda.sh
 
 We'll go through this in a minute, but if you did actually find it, well done! Figshare (of which ORDA is an instance) does a lot right, but has some very strange decisions inside it as well.
 
-:::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::
 
 ## ORDA
 
@@ -143,7 +143,7 @@ As mentioned above, if you are thinking of having both a package in a repository
 
 ## Zenodo
 
-Of course these are not the only places, similar in practice you can deposit a GitHub repo in the Zenodo repository, which GitHub have written [guidance](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content) on.
+Of course these are not the only places you can use, similar in practice you can deposit a GitHub repo in Zenodo, which GitHub have written [guidance](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content) on.
 
 
 :::::::::::::::::::::::::::::::::::: keypoints

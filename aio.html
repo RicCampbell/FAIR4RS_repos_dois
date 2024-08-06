@@ -596,7 +596,7 @@ so?</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Think about who ‘owns’ packages, how they are disseminated, and what
 we wanted to achieve with our code</p>
@@ -609,7 +609,7 @@ we wanted to achieve with our code</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Maybe! But also probably not. The main issue is that they are
 different things really, or at least help and aid in different ways, but
@@ -669,7 +669,7 @@ account.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>We’ll go through this in a minute, but if you did actually find it,
 well done! Figshare (of which ORDA is an instance) does a lot right, but
@@ -792,12 +792,230 @@ any links that you are not going to use.
 <a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>Metadata is….</p>
+<p>Simply put metadata is data about data (hence meta). This might not
+be that helpful a description however, but is necessary as it holds true
+across all types of meta data. If we continue with the idea of
+depositing your code in a repository as we saw in the previous episode
+it becomes much clearer. The metadata is the data that’s on the deposit
+‘front’ page so to speak. It is there to inform anyone who comes across
+the deposit what they have found without having to dive too far into the
+actual data or code.</p>
+</section><div class="section level1">
+<h1 id="can-you-show-me-some-good-metadata">Can you show me some good metadata?<a class="anchor" aria-label="anchor" href="#can-you-show-me-some-good-metadata"></a>
+</h1>
+<p>Of course, however, it might be more interesting to see some bad
+metadata as it’s probably more effective in showing how important
+metatdata can be.</p>
+<figure><img src="fig/ORDA_bad_metadata_example.png" alt="A screenshot showing a deposit in ORDA with bad metadata" class="figure mx-auto d-block"><div class="figcaption">“Image 1 - ORDA example of bad metadata”</div>
+</figure><p>As you can see there, there’s some information about the deposit, but
+it’s probably not nearly enough for anyone to know what it really is, or
+if it’s useful to them. This code <em>could</em> be perfect for someone
+to use, or adapt, but they wouldn’t know without having to do a lot of
+work to figure this out. There is a link to the github repository, but
+that’s probably not got any more information in it, and still as we’ve
+seen that means someone wouldn’t be able to as reference you work. (N.B.
+There’s no DOI on that deposit as it’s just a draft, we wouldn’t really
+accept a deposit in ORDA that had so little information, another good
+reason to think about metadata as ORDA isn’t an outlier in this
+regard).</p>
+<p>But there is a README there, which asks the question;</p>
+<div class="section level2">
+<h2 id="is-a-readme-metadata">Is a README metadata?<a class="anchor" aria-label="anchor" href="#is-a-readme-metadata"></a>
+</h2>
+<p>It’s a good question, and one I’m sure people would argue over as
+they have different views on it, technically, metadata is for finding
+software while documentation, including READMEs, are for understanding
+it. However, the thing that actually matters is you should probably have
+a README, and metadata, and other documentation as well. READMEs and
+other documentation (comments etc.) should be created early and updated
+as you go along, with potentially metadata being thought of later in the
+life cycle. However, a good README may directly feed into you metadata.
+If you copy and paste elements, there’s no problem there, in fact it can
+be beneficial, it saves you time, and makes sure everything lines up and
+states the same things.</p>
+<p>It might be worth thinking of metadata as the very overarching
+information, a README goes into more detail but covers the whole
+software/project, and comments etc. are much more fine grained to where
+they reside.</p>
+<p>There is a <a href="https://github.com/Joe-Heffer-Shef/FAIR4RS-Documentation/tree/main" class="external-link">Documentation</a>
+module to this FAIR4RS course, this goes over all things documentation
+in more detail.</p>
+<div id="challenge1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+</h3>
+<div class="callout-content">
+<p>What metadata do you think should be included in a deposit?</p>
+</div>
+</div>
+</div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div class="accordion-body">
+<p>Think about what you might want to see if you were reusing code
+(i.e. a package), or what you probably take for granted that you know
+about your code</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ul>
+<li>Name (a good one)</li>
+<li>(Lay) summary</li>
+<li>A description of what it is</li>
+<li>What language is it in, and versions</li>
+<li>Provenance</li>
+<li>It’s licence (see licence section)</li>
+<li>Any related material</li>
+<li>Dependencies</li>
+<li>File structure</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<p>These might not even be everything depending on what you have
+created. You might want to have use cases, the target audience, key
+features, compatibility etc. The point is to have information that
+reduces the workload or thought that someone has to do to know what it
+is they are looking at, and if it’s useful to them.</p>
+<p>None of these are world changing ideas, but they do require some
+thought to them;</p>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+</h3>
+<div class="callout-content">
+<p><em>“There are only two hard things in Computer Science: cache
+invalidation and naming things.”</em></p>
+<p>– Phil Karlton</p>
+</div>
+</div>
+</div>
+<p>You may have heard or seen this quote before, but it does stand true
+(I’m going to focus on the first one of course), naming things is hard.
+This is normally thought about for your variables, but it does carry
+over to other elements too. Creating a short, informative summary or
+description can be tricky, but doing that using no specialised
+vocabulary makes it harder, and also trying include all the elements
+that you intransigently know about your work but others do not.</p>
+<p>If we go back to the example of bad metadata that we saw earlier,
+there are actually two bits of information there that are helpful.</p>
+<ol style="list-style-type: decimal">
+<li>It’s got the right type of item type selected, as it’s down as
+‘software’, which makes it easier for people to find and know
+immediately what it is.</li>
+<li>It also mentions that it’s mostly to do with ‘wrangling of health
+data’. It is not much information, but it is very easy to forget the
+most simple elements. If you’ve only ever worked with health data and
+written plenty of bits of code to help, you might not think to mention
+this very high level bit of information.</li>
+</ol>
+</div>
+<div class="section level2">
+<h2 id="machine-findable">Machine findable<a class="anchor" aria-label="anchor" href="#machine-findable"></a>
+</h2>
+<p>It’s best when thinking about creating metadata that you think of
+human users. It’s also really good to think of yourself as one of these
+users, either yourself a few years ago, when you might have known less
+of the area and might not have known exactly you were looking for, or
+yourself in a few years, when you’ve most likely forgotten everything
+about this code, why you made it, and what exactly it does.</p>
+<p>However you also get a bit more findablility for free by creating
+metadata,as these fields are often used and standardised for machine
+readability as well.</p>
+</div>
+<div class="section level2">
+<h2 id="a-good-example">A good example<a class="anchor" aria-label="anchor" href="#a-good-example"></a>
+</h2>
+<p>We’ve seen a bad example, but what would a good example look
+like;</p>
+<figure><img src="fig/ORDA_good_metadata_example.png" alt="A screenshot showing a deposit in ORDA with good metadata" class="figure mx-auto d-block"><div class="figcaption">“Image 2 - ORDA example of good metadata”</div>
+</figure><div class="Challenge">
+<p>Can you pick out the good (and bad) elements of metadata in the above
+deposit?</p>
+<div class="Solution">
+<ul>
+<li>Author names</li>
+<li>Version number</li>
+<li>Date created</li>
+<li>Item type</li>
+<li>A clear name</li>
+<li>A clear description</li>
+<li>Licence</li>
+<li>Categories and keywords</li>
+<li>Related materials including a link to relevant paper</li>
+<li><em>Initialism in title</em></li>
+</ul>
+</div>
+</div>
+<p>There’s also the language that it is written in, both in the
+description and the keywords. The first three listed, names, version,
+and date, would all fall under what was previously referred to as
+provenance. As you can see a lot of these are fields in a deposit to a
+repository, which makes it easier, but if you are going a different
+route could be very easy to miss out. It is also important that you keep
+these up to date if they change, or just take that bit of time to
+consider, it’s not good form to miss someone off an author list, and
+this applies to software author list as well.</p>
+</div>
+<div class="section level2">
+<h2 id="standards">Standards<a class="anchor" aria-label="anchor" href="#standards"></a>
+</h2>
+<p>As just seen, a repository, even a GitHub repository will has fields
+for a some of this information and these will be implementing a
+standard, but if you are doing something else, you might need to
+consider using a standard for you metadata. Some example are
+schema.org’s <a href="https://schema.org/SoftwareApplication" class="external-link">SoftwareApplication</a>
+type, and <a href="https://codemeta.github.io/" class="external-link">CodeMeta</a>. These just
+help tools to work with your metadata by having a set standard, for
+example if you created it now what would you call your author list
+field, author_list, authorList, developer, developers, writer, creator,
+coders etc. so you can see this could get out of hand quickly.</p>
+<p>You’ll have come across standards before of course, when you download
+citations of papers for your reference manager software;</p>
+<figure><img src="fig/scholar_citation_standards.png" alt="A screenshot showing the standard citation options from Google Scholar" class="figure mx-auto d-block"><div class="figcaption">“Image 3 - Citation standard options from Google
+Scholar”</div>
+</figure><div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Metadata helps drive discovery of your software</li>
+<li>It’s easy to not include key elements as it’s ‘obvious’</li>
+<li>Standardisation of metadata is good to help tools use the
+metadata</li>
+</ul>
+</div>
+</div>
+</div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section>
+</div>
+</div></section>
 </div>
     </main>
 </div>

@@ -50,6 +50,7 @@ contact: 'rdm@sheffield.ac.uk'
 episodes:
 - doi.md
 - repositories.md
+- metadata.md
 
 learners:
 

@@ -68,7 +68,8 @@ The bottom three you can see would be needed to be certain you can reproduce the
 
 This is an example of a <code>CITATION.cff</code> file (the one for this module):
 
-'''markdown
+<code>
+```
 This CITATION.cff file was generated with cffinit.
 Visit https://bit.ly/cffinit to generate yours today!
 
@@ -107,7 +108,8 @@ keywords:
   - metadata
   - citation
 license: CC-BY-4.0
-'''
+```
+</code>
 
 As you can see this has all the relevant metadata needed for full citation, and you can see where it was created. This has also been updated manually as well when things have changed, but there's lots of places you can see the fields needed and the style for them to be in if you have a quick search.
 

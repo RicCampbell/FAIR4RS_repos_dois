@@ -876,7 +876,7 @@ in more detail.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Think about what you might want to see if you were reusing code
 (i.e. a package), or what you probably take for granted that you know
@@ -890,7 +890,7 @@ about your code</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>Name (a good one)</li>
@@ -1074,11 +1074,12 @@ any links that you are not going to use.
 <a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>If we go back to the first thing that was stated in this module
-<em>The code that you write is important. No matter the size, style, or
-language it is an integral part of the research that it is part of, or
-of course sometimes it is the main output of the research project.</em>,
-which also applies to code that other people write. That’s why it’s
+<p>If we go back to the first thing that was stated in this module</p>
+<p><em>The code that you write is important. No matter the size, style,
+or language it is an integral part of the research that it is part of,
+or of course sometimes it is the main output of the research
+project.</em>,</p>
+<p>which also applies to code that other people write. That’s why it’s
 important to know that you can (and should) cite people’s code you use,
 and how to make it so people can cite yours.</p>
 </section><section><h2 class="section-heading" id="dora-funders-and-the-hidden-ref">DORA, funders, and the (hidden) REF<a class="anchor" aria-label="anchor" href="#dora-funders-and-the-hidden-ref"></a>
@@ -1162,8 +1163,9 @@ top level files that contain in a standardised fashion all the
 information required.</p>
 <p>This is an example of a <code>CITATION.cff</code> file (the one for
 this module):</p>
-<p><code> This CITATION.cff file was generated with cffinit. Visit <a href="https://bit.ly/cffinit" class="external-link uri">https://bit.ly/cffinit</a> to
-generate yours today!</code></p>
+<p>’’’markdown This CITATION.cff file was generated with cffinit. Visit
+<a href="https://bit.ly/cffinit" class="external-link uri">https://bit.ly/cffinit</a>
+to generate yours today!</p>
 <p>cff-version: 1.2.0 title: ‘Software dissemination and impact’
 message: &gt;- If you use this software, please cite it using the
 metadata from this file. type: software authors: - given-names: ‘Jenni’
@@ -1188,7 +1190,7 @@ that you should consider when publishing your software, which will help
 you easily reference your work, and also help make it more findable and
 reusable by others.</p>
 <p>keywords: - carpentries - fair4rs - university of sheffield -
-repositories - dois - metadata - citation license: CC-BY-4.0 </p>
+repositories - dois - metadata - citation license: CC-BY-4.0 ’’’</p>
 <p>As you can see this has all the relevant metadata needed for full
 citation, and you can see where it was created. This has also been
 updated manually as well when things have changed, but there’s lots of
@@ -1208,7 +1210,7 @@ correct information to cite other people’s work.</p>
 everywhere uses them either. As previously mentioned you can link your
 GitHub repos to ORDA, the university repository, and ORDA has an easy
 way of creating citations as well.</p>
-<figure><img src="../fig/ORAD_citation_example.png" alt="A screenshot showing the a citiation created by ORDA." class="figure mx-auto d-block"><div class="figcaption">“Image 2 - ORDA citiation creation”</div>
+<figure><img src="../fig/ORDA_citation_example.png" alt="A screenshot showing the a citiation created by ORDA." class="figure mx-auto d-block"><div class="figcaption">“Image 2 - ORDA citiation creation”</div>
 </figure><p>However, the two citations that we’ve just seen for the same output
 is not the same. The issues comes with that Figshare (that ORDA is an
 instance of), does not look in the <code>CITATION.cff</code> file, but
@@ -1223,8 +1225,9 @@ being kept with it, and the ability of people to find the original
 repository. The <code>CITATION.cff</code> file should also always be
 kept with your work if it does get shared on wards and helps to this end
 as well.</p>
-<p>GitHub citation: <code> Adams, J., &amp; Campbell, R. Software
-dissemination and impact [Computer software]. <a href="https://github.com/RicCampbell/FAIR4RS_repos_dois" class="external-link uri">https://github.com/RicCampbell/FAIR4RS_repos_dois</a>
+<p>GitHub citation:</p>
+<p><code> Adams, J., &amp; Campbell, R. Software dissemination and
+impact [Computer software]. <a href="https://github.com/RicCampbell/FAIR4RS_repos_dois" class="external-link uri">https://github.com/RicCampbell/FAIR4RS_repos_dois</a>
 </code></p>
 <p>ORDA citation;</p>
 <p><code> Campbell, R. (2024). <em>FAIR4RS_repos_dois</em> (Version 0).
@@ -1238,14 +1241,14 @@ The University of Sheffield. </code></p>
 </h3>
 <div class="callout-content">
 <ul>
-<li>Citation is important to ensure that the correct regcognition and
+<li>Citation is important to ensure that the correct recognition and
 credit is assigned to all work</li>
 <li>Citation of software differs from papers, but is needed to aid
 reproducability of work</li>
 <li>
 <code>CITATION.cff</code> files should contain all the needed
 metadata and help create citations for use.</li>
-<li>YOu may need to complete the relavent fields in multiple places to
+<li>You may need to complete the relevant fields in multiple places to
 ensure correct citation in all cases.</li>
 </ul>
 </div>

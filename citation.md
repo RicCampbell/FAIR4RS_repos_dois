@@ -24,7 +24,11 @@ exercises: 0
 ## Introduction
 
 
-If we go back to the first thing that was stated in this module *The code that you write is important. No matter the size, style, or language it is an integral part of the research that it is part of, or of course sometimes it is the main output of the research project.*, which also applies to code that other people write. That's why it's important to know that you can (and should) cite people's code you use, and how to make it so people can cite yours.
+If we go back to the first thing that was stated in this module
+
+*The code that you write is important. No matter the size, style, or language it is an integral part of the research that it is part of, or of course sometimes it is the main output of the research project.*,
+
+which also applies to code that other people write. That's why it's important to know that you can (and should) cite people's code you use, and how to make it so people can cite yours.
 
 ## DORA, funders, and the (hidden) REF
 
@@ -64,7 +68,7 @@ The bottom three you can see would be needed to be certain you can reproduce the
 
 This is an example of a <code>CITATION.cff</code> file (the one for this module):
 
-<code>
+'''markdown
 This CITATION.cff file was generated with cffinit.
 Visit https://bit.ly/cffinit to generate yours today!
 
@@ -103,7 +107,7 @@ keywords:
   - metadata
   - citation
 license: CC-BY-4.0
-</code>
+'''
 
 As you can see this has all the relevant metadata needed for full citation, and you can see where it was created. This has also been updated manually as well when things have changed, but there's lots of places you can see the fields needed and the style for them to be in if you have a quick search.
 
@@ -117,11 +121,12 @@ So this is great for people citing your work and for getting the correct informa
 
 Not just GitHub makes use of CITATION.cff files, however, not everywhere uses them either. As previously mentioned you can link your GitHub repos to ORDA, the university repository, and ORDA has an easy way of creating citations as well.
 
-!["Image 2 - ORDA citiation creation"](fig/ORAD_citation_example.png){alt="A screenshot showing the a citiation created by ORDA."}
+!["Image 2 - ORDA citiation creation"](fig/ORDA_citation_example.png){alt="A screenshot showing the a citiation created by ORDA."}
 
 However, the two citations that we've just seen for the same output is not the same. The issues comes with that Figshare (that ORDA is an instance of), does not look in the <code>CITATION.cff</code> file, but creates one from the metadata that is entered for the deposit. In this example the author list is different as I've entered all authors into the <code>CITATION.cff</code> file, but have not edited this in ORDA. It's easy to add these, but it repetition of work, which isn't ideal, but it's important to try and get everything the same where possible. You don't know where your work may end up once it's been made open, so controlling what you can to start with really improves the provenance being kept with it, and the ability of people to find the original repository. The <code>CITATION.cff</code> file should also always be kept with your work if it does get shared on wards and helps to this end as well.
 
 GitHub citation:
+
 <code> Adams, J., & Campbell, R. Software dissemination and impact [Computer software]. https://github.com/RicCampbell/FAIR4RS_repos_dois </code>
 
 ORDA citation;
@@ -129,10 +134,10 @@ ORDA citation;
 <code> Campbell, R. (2024). *FAIR4RS_repos_dois* (Version 0). The University of Sheffield. </code>
 
 :::::::::::::::::::::::::::::::::::: keypoints
- - Citation is important to ensure that the correct regcognition and credit is assigned to all work
+ - Citation is important to ensure that the correct recognition and credit is assigned to all work
  - Citation of software differs from papers, but is needed to aid reproducability of work
  - <code>CITATION.cff</code> files should contain all the needed metadata and help create citations for use.
- - YOu may need to complete the relavent fields in multiple places to ensure correct citation in all cases.
+ - You may need to complete the relevant fields in multiple places to ensure correct citation in all cases.
 ::::::::::::::::::::::::::::::::::::::::::::::
 
 

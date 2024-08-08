@@ -25,7 +25,7 @@ exercises: 0
 
 Simply put metadata is data about data (hence meta). This might not be that helpful a description however, but is necessary as it holds true across all types of meta data. If we continue with the idea of depositing your code in a repository as we saw in the previous episode it becomes much clearer. The metadata is the data that's on the deposit 'front' page so to speak. It is there to inform anyone who comes across the deposit what they have found without having to dive too far into the actual data or code.
 
-# Can you show me some good metadata?
+## Can you show me some good metadata?
 
 Of course, however, it might be more interesting to see some bad metadata as it's probably more effective in showing how important metatdata can be.
 

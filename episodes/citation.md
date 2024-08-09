@@ -135,6 +135,10 @@ ORDA citation;
 
 <code> Campbell, R. (2024). *FAIR4RS_repos_dois* (Version 0). The University of Sheffield. </code>
 
+## Extending your CITATION.cff file
+
+There are also a lot of other standardised fields that you can add to your <code>CITATION.cff</code> file than the ones we have already seen. You can link to a related journal article if there is one, or you could cite a dataset that is contained in your GitHub repo, for more information about these extensions, GitHub has writen an easy to follow [help page](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) on the subject.
+
 :::::::::::::::::::::::::::::::::::: keypoints
  - Citation is important to ensure that the correct recognition and credit is assigned to all work
  - Citation of software differs from papers, but is needed to aid reproducability of work

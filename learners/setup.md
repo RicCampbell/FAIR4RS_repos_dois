@@ -6,7 +6,7 @@ title: Summary and Setup
 
 While putting your software online certainly helps it satisfy the FAIR principles, simply doing so might not be enough for other researchers to actually find and utilise what you’ve put out there.
 
-It’s important to know the benefits and issues with where you store and publish your data, and to make the most of the tools these platforms provide, such as Digital Object Identifiers (DOIs). It’s also important to know best practice for how to increase the visibility and citability of your work in cases where your chosen platform lacks these features.
+It’s important to know the benefits and issues with where you store and publish your software, and to make the most of the tools these platforms provide, such as Digital Object Identifiers (DOIs). It’s also important to know best practice for how to increase the visibility and citability of your work in cases where your chosen platform lacks these features.
 
 This part of the course will introduce and explore worked examples of elements that you should consider when publishing your software, which will help you easily reference your work, and also help make it more findable and reusable by others.
 
@@ -37,6 +37,6 @@ The repo of these materials may be used if needed [Software dissemination and im
 
 ### Details
 
-No specific software will be required for this lesson, however please make sure you can access your account on the University of Sheffield's institutional repository [ORDA](https://orda.shef.ac.uk), having a GItHub account and a ready made repository would also be benificial.
+No specific software will be required for this lesson, however please make sure you can access your account on the University of Sheffield's institutional repository [ORDA](https://orda.shef.ac.uk). Having a GitHub account and a ready made repository would also be beneficial.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::

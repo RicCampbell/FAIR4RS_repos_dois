@@ -6,7 +6,7 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- I can site/people can site my code?
+- I can cite/people can cite my code?
 - What do you want people to access if it's cited?
 - How do I cite code?
 
@@ -24,35 +24,36 @@ exercises: 0
 ## Introduction
 
 
-If we go back to the first thing that was stated in this module
+If we go back to the first thing that was stated in this module,
 
-*The code that you write is important. No matter the size, style, or language it is an integral part of the research that it is part of, or of course sometimes it is the main output of the research project.*,
+*The code that you write is important. No matter the size, style, or language, it is an integral aspect of the research that it is part of, or indeed, sometimes it is the main output of the research project.*,
 
-which also applies to code that other people write. That's why it's important to know that you can (and should) cite people's code you use, and how to make it so people can cite yours.
+This also applies to code that other people write. That’s why it’s important to know that you can (and should) cite other people’s code when you use it, and also how to enable other people to cite yours.
 
 ## DORA, funders, and the (hidden) REF
 
 <!--- ask about any other elements, the importance of other outputs, not just papers --->
 
-[DORA](https://sfdora.org/), The Declaration on Research Assessment, sets out to improve the ways in which the outputs of scholarly research are evaluated, essentially moving away from the impact factor of journals that you publish in (which was originally created to help librarians decide which journals to subscribe to, not anything to do with academic success). The University of Sheffield is a signatory of this declaration.
+[DORA](https://sfdora.org/), The Declaration on Research Assessment, sets out to improve the ways in which the outputs of scholarly research are evaluated, essentially moving away from a focus on the impact factor of journals that you publish in. The University of Sheffield is a signatory of this declaration. DORA prompts institutions and the sector as a whole to consider [different ways of evaluating research quality](https://sfdora.org/read/), including assessing the quality of all research outputs (e.g. datasets, code) as well as published journal articles, and encouraging recognition of all authors’ contributions.
 
-We're also seeing a continued movement from funders to make open and available all aspects of researcher projects as the importance and cost of all elements are more truly recognised, we've seen this with data with a lot of funders requiring (where suitable) to be made open, and we're also seeing this with code. Making things open is great, reusing work is also great, ensuring people get the recognistion they deserve from their work is essential (and in most cases a legal necessity, see licence section, or software Terms and Conditions e.g. [SAS](https://www.sas.com/en_gb/legal/editorial-guidelines.html)).
+We’re also seeing a continued movement from funders to make open and available all aspects of research projects as the importance and cost of all elements are more fully recognised. For instance, we’ve seen this with data, with a lot of funders requiring (where suitable) this to be made openly accessible, and we’re also increasingly seeing it with code. Making things open and reusing existing work are both important goals, and ensuring people get the recognition they deserve from their work is essential (and also in most cases a legal necessity - see licence section of this module, or software Terms and Conditions e.g. [SAS](https://www.sas.com/en_gb/legal/editorial-guidelines.html)).
 
-There's also been some movement with the REF as well, with more types of outputs being eligible to be returned, and if we thing about impact case studies, a useful piece of software could easily have good impact. There's also movements like the [Hidden REF](https://hidden-ref.org/the-5-percent-manifesto/) whose objective is to gain recognistion for all people who contribute to research, and are also wanting institutions to pledge to having 5% of their REF returns be non-traditional research outputs (anything that's not a journal paper).
+There’s also been some movement with the REF as well, with more types of outputs being considered eligible to be returned, and if we think about impact case studies, a useful piece of software could easily have a substantial impact. There are also movements like the [Hidden REF](https://hidden-ref.org/the-5-percent-manifesto/), whose objective is to gain recognition for all people who contribute to research, and are also wanting institutions to pledge to making 5% of their REF returns non-traditional research outputs (i.e. anything that’s not a journal paper or book).
 
-These are also all good reasons not to simply cite the associated paper, if there even is one.
+These are also all good reasons not to simply cite the associated paper for a piece of software (if there even is one), but to cite the software itself - and to make it easy for others to cite your own code.
+
 
 ## Citation and CITATION.cff files
 
-Citation of software if of course different to a standard journal article. Normally there is one version of an article and nothing that can really 'break' with them, this is not true of software. Also, a paper tends to have all the information you need to cite it correctly quite clearly there for you, again this often isn't the case for software.
+Citation of software is of course different to that of a standard journal article. Normally there is one version of an article and nothing that can really ‘break’ with them; this is not true of software. Also, a paper tends to have all the information you need to cite it correctly quite clearly there for you - again, this often isn’t the case for software.
 
 ::::::::::::::::::::::::::::::::challenge 
 
-Think what people might need to know from a citation to be able to reproduce a piece of research
+Think what people might need to know from a citation to be able to reproduce a piece of research. (I.e., to make sure they're using the same piece of software used in the original study?)
 
 :::::::::::::::::::::::::::::::::::::::::
 
-Some of the main things to know about the software used that would be integral to being able to reproduce the outputs would be;
+Some of the main things to know about the software used that would be integral to being able to reproduce the outputs would be:
 
  - Title
  - Authors
@@ -60,11 +61,11 @@ Some of the main things to know about the software used that would be integral t
  - Where to find the software
  - How to access the code (if different to the above, and available)
  
-The first two, while clear should be part of a citation, might not be immediate when thinking about reproducablity, but if you think that they can sometimes act as a kind of 'primary key' to help people know they're working with the right software (see last episode and naming things).
+The first two, while it’s clear that they should be part of a citation, might not immediately seem relevant when thinking about reproducibility, but if you think that they can sometimes act as a kind of ‘primary key’ to help people know they’re working with the right software (see the last episode and its discussion of naming things).
 
-The bottom three you can see would be needed to be certain you can reproduce the work as best as possible. We know that many changes can happen between versions, some big changes, some small changes that could have knock on affects to how everything works. Of course where to find the software goes back to our first episode, and having a solid pointer to the code can be solved by getting a DOI for your work (you should of course not mint a DOI for other people's work, and you might just have to cite the best link available).
+The bottom three you can see would be needed in order to be certain you can reproduce the work as best as possible. We know that many changes can happen between versions, some big changes, some small changes that could have knock-on effects to how everything works. Of course, where to find the software goes back to our first episode, and having a solid pointer to the code can be solved by getting a DOI for your work (you should of course not mint a DOI for other people’s work, and you might just have to cite the best link available).
 
-<code>CITATION.cff</code> are designed to pull everything you or others need in one place. Similar to README, or LICENCE files, they are top level files that contain in a standardised fashion all the information required.
+<code>CITATION.cff</code> files are designed to pull together everything you or others need in one place. Similar to README, or LICENCE files, they are top level files that contain in a standardised fashion all the information required.
 
 This is an example of a <code>CITATION.cff</code> file (the one for this module):
 
@@ -111,21 +112,21 @@ license: CC-BY-4.0
 ```
 </code>
 
-As you can see this has all the relevant metadata needed for full citation, and you can see where it was created. This has also been updated manually as well when things have changed, but there's lots of places you can see the fields needed and the style for them to be in if you have a quick search.
+As you can see, this has all the relevant metadata needed for full citation, and you can see where it was created. This has also been updated manually as well when things have changed, but there are lots of places online where you can see the fields needed and the style they should be in if you have a quick search.
 
-If this is inside a GitHub repo, then on the right hand side you will be able to get the citiation text, or one to be imported into a reference manager, via a BibTeX file.
+If this is inside a GitHub repo, then on the right hand side, you will be able to get the citation text, or download one to be imported into a reference manager, via a BibTeX file.
 
 !["Image 1 - GitHub citiation outputs"](fig/github_citation_example.png){alt="A screenshot showing the options shown when clicking on the 'Cite this repository' in GitHub."}
 
 So this is great for people citing your work and for getting the correct information to cite other people's work.
 
-## Not all citation are created equal
+## Not all citations are created equal
 
-Not just GitHub makes use of CITATION.cff files, however, not everywhere uses them either. As previously mentioned you can link your GitHub repos to ORDA, the university repository, and ORDA has an easy way of creating citations as well.
+GitHub is not the only platform to make use of <code>CITATION.cff</code> files; however, not every platform or repository uses them either. As previously mentioned, you can link your GitHub repos to ORDA, the University of Sheffield repository, and ORDA has an easy way of creating citations as well:
 
 !["Image 2 - ORDA citiation creation"](fig/ORDA_citation_example.png){alt="A screenshot showing the a citiation created by ORDA."}
 
-However, the two citations that we've just seen for the same output is not the same. The issues comes with that Figshare (that ORDA is an instance of), does not look in the <code>CITATION.cff</code> file, but creates one from the metadata that is entered for the deposit. In this example the author list is different as I've entered all authors into the <code>CITATION.cff</code> file, but have not edited this in ORDA. It's easy to add these, but it repetition of work, which isn't ideal, but it's important to try and get everything the same where possible. You don't know where your work may end up once it's been made open, so controlling what you can to start with really improves the provenance being kept with it, and the ability of people to find the original repository. The <code>CITATION.cff</code> file should also always be kept with your work if it does get shared on wards and helps to this end as well.
+However, the two citations that we’ve just seen for the same output are not the same. The issue comes with the fact that Figshare (which the University of Sheffield repository,  ORDA, is an instance of), does not look in the <code>CITATION.cff</code> file, but instead creates one from the metadata that is entered for the deposit. In this example, the author list is different as I’ve entered all authors into the <code>CITATION.cff</code> file, but have not edited this in ORDA. It’s easy to add these, but it means repetition of work. While this isn’t ideal, it’s important to try to get everything the same where possible. You don’t know where your work may end up once it’s been made open, so controlling what you can to start with really improves chances of the provenance being kept with it, and the ability of people to find the original repository. The <code>CITATION.cff</code> file should also always be kept with your work if it does get shared onwards, and helps to this end as well.
 
 GitHub citation:
 
@@ -137,12 +138,12 @@ ORDA citation;
 
 ## Extending your CITATION.cff file
 
-There are also a lot of other standardised fields that you can add to your <code>CITATION.cff</code> file than the ones we have already seen. You can link to a related journal article if there is one, or you could cite a dataset that is contained in your GitHub repo, for more information about these extensions, GitHub has writen an easy to follow [help page](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) on the subject.
+There are also a lot of standardised fields that you can add to your <Code>CITATION.cff</code> file, other than the ones we have already seen. You can link to a related journal article if there is one, or you could cite a dataset that is contained in your GitHub repo. For more information about these extensions, GitHub provides an easy-to-follow [help page](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) on the subject.
 
 :::::::::::::::::::::::::::::::::::: keypoints
  - Citation is important to ensure that the correct recognition and credit is assigned to all work
- - Citation of software differs from papers, but is needed to aid reproducability of work
- - <code>CITATION.cff</code> files should contain all the needed metadata and help create citations for use.
+ - Citation of software differs from that of articles, but is needed to aid the reproducibility of work
+ - <code>CITATION.cff</code> files should contain all the necessary metadata and help create citations for use.
  - You may need to complete the relevant fields in multiple places to ensure correct citation in all cases.
 ::::::::::::::::::::::::::::::::::::::::::::::
 

@@ -48,10 +48,8 @@ contact: 'rdm@sheffield.ac.uk'
 
 # Order of episodes in your lesson
 episodes:
-- doi.md
-- repositories.md
-- metadata.md
-- citation.md
+- doi and repositories.md
+- metadata and citation.md
 
 learners:
 
